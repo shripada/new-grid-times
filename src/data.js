@@ -171,4 +171,28 @@ export const SPORTS_STORIES = [
     },
     title: 'Behind the scenes: coaching a Little League team',
   },
+  {
+    id: 's-3',
+    image: {
+      src: '/images/coach.jpg',
+      alt: 'A soccer coach places pylons on a field',
+    },
+    title: 'Behind the scenes: coaching a Little League team',
+  },
+  {
+    id: 's-3',
+    image: {
+      src: '/images/coach.jpg',
+      alt: 'A soccer coach places pylons on a field',
+    },
+    title: 'Behind the scenes: coaching a Little League team',
+  },
+  {
+    id: 's-3',
+    image: {
+      src: '/images/coach.jpg',
+      alt: 'A soccer coach places pylons on a field',
+    },
+    title: 'Behind the scenes: coaching a Little League team',
+  },
 ];

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Twitter, Facebook } from 'react-feather';
 import styled from 'styled-components/macro';
+import { QUERIES } from '../../constants';
 import MaxWidthWrapper from '../MaxWidthWrapper';
 
 import VisuallyHidden from '../VisuallyHidden';
@@ -170,6 +171,17 @@ const MainNavArea = styled.div`
   gap: 32px;
   padding: 32px 0 48px;
   text-align: center;
+
+  @media ${QUERIES.tabletOnly}{
+    display:grid;
+    grid-template-columns: repeat(3, calc((100% - 64px)/3));
+  }
+
+  @media ${QUERIES.laptopAndUp}{
+    display:grid;
+    grid-template-columns: repeat(4, calc((100% - 96px)/4));
+    justify-content: space-evenly;
+  }
 `;
 
 const MainNavHeading = styled.h2`
@@ -177,12 +189,20 @@ const MainNavHeading = styled.h2`
   font-weight: var(--font-weight-bold);
   color: var(--color-gray-300);
   margin-bottom: 8px;
+
+  @media ${QUERIES.tabletAndUp}{
+    text-align:left;
+  }
 `;
 
 const MainNavList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 4px;
+
+  @media ${QUERIES.tabletAndUp}{
+    text-align: left;
+  }
 `;
 
 const SubfooterWrapper = styled.div`
